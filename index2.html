@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="main1.js"></script>
+	<style>
+	.canvas-container{
+	  position: relative;
+	  width: 500px;
+	  height: 500px;
+	}
+	#canvas{
+		background :#fefefe;
+		position:absolute;
+		border:thin solid lightgrey;
+		-webkit-box-shadow:4px 4px 8px rgb(0,0,0,0.5);
+		-moz-box-shadow:4px 4px 8px rgb(0,0,0,0.5);
+		box-shadow : 4px 4px 8px rgb(0,0,0,0.5);
+	}
+	#button {
+	  position:absolute;
+	  left:50%;
+	  top:100%
+	}
+
+	</style>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+ <div class="row canvas-container" >
+ <canvas id="canvas"></canvas>
+<!-- <button id='button' ng-click = "showBio()">Know Me</button>  -->
+ </div>
+ <div class="row">
+
+ </div>
+
+</div>
+
+</body>
+</html>
