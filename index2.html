@@ -1,42 +1,91 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 	<script src="main1.js"></script>
 	<style>
-	.canvas-container{
-	  position: relative;
-	  width: 500px;
-	  height: 500px;
-	}
-	#canvas{
-		background :#fefefe;
-		position:absolute;
-		border:thin solid lightgrey;
-		-webkit-box-shadow:4px 4px 8px rgb(0,0,0,0.5);
-		-moz-box-shadow:4px 4px 8px rgb(0,0,0,0.5);
-		box-shadow : 4px 4px 8px rgb(0,0,0,0.5);
-	}
-	#button {
-	  position:absolute;
-	  left:50%;
-	  top:100%
-	}
+		.canvas-container {
+			position: relative;
+			width: 500px;
+			height: 500px;
+		}
 
+		#canvas {
+			background: #fefefe;
+			position: relative;
+			border: thin solid lightgrey;
+			-webkit-box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.5);
+			-moz-box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.5);
+			box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.5);
+		}
+
+		#button {
+			position: absolute;
+			left: 50%;
+			top: 100%
+		}
+		#upTab{
+			
+		}
 	</style>
 </head>
+
 <body>
-<div ng-app="myApp" ng-controller="myCtrl">
- <div class="row canvas-container" >
- <canvas id="canvas"></canvas>
-<!-- <button id='button' ng-click = "showBio()">Know Me</button>  -->
- </div>
- <div class="row">
+	<div ng-app="myApp" ng-controller="myCtrl">
+		<div class="row canvas-container">
+			<canvas id="canvas">
+			</canvas>
+			<div>
+				<div class="container">
+					<div class="row">
+						<div class="panel-heading" id="upTab">
+				    <span class="panel-title">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Collapsible Group 1</a>
+				    </span>
+						<span class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Collapsible Group 2</a>
+						</span>
+						<span class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Collaple Group 3</a>
+						</span>
+				</div>
+				<div class="panel-group" id="accordion">
+				    <div class="panel panel-default">
+				        <div id="collapse1" class="panel-collapse collapse in">
+				            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+				        </div>
+				    </div>
+				    <div class="panel panel-default">
+				        <div id="collapse2" class="panel-collapse collapse">
+				            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+				        </div>
+				    </div>
+				    <div class="panel panel-default">
+				        <div id="collapse3" class="panel-collapse collapse">
+				            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+				        </div>
+				    </div>
+				</div>
+				</div>
+				</div>
+			</div>
+			<!-- <button id='button' ng-click = "showBio()">Know Me</button>  -->
+		</div>
 
- </div>
-
-</div>
-
+	</div>
 </body>
+
 </html>

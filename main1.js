@@ -9,7 +9,7 @@ app.controller('myCtrl', function($scope) {
 	var numStars = 100;
 	var stars =  [];
 	var size =3;
-	var speed = 10;
+	var speed = 5;
 	var f1 = canvas.width;
 	var centerX = canvas.width/2;
 	var centerY = canvas.height/2;
@@ -39,6 +39,12 @@ app.controller('myCtrl', function($scope) {
 			c.fill();
 		}
 	}
+
+	document.addEventListener("click", function(e) {
+		const x = e.offsetX
+	  const y = e.offsetY
+		console.log(x,y,'gggggggggggggggg');
+	});
 
 	function draw(){
 		c.fillStyle = "black";
